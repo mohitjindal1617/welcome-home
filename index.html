@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Home!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Curtain Overlay -->
+    <div id="curtain-container" class="curtain-container">
+        <div class="curtain left"></div>
+        <div class="curtain right"></div>
+        <div class="curtain-trigger">
+            <button id="open-curtain-btn">Welcome Home ❤️</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="welcome-content" class="welcome-content">
+        <div class="card">
+            <h1>Welcome Home!</h1>
+            <p>May your life together be filled with love, laughter, and endless happiness.</p>
+            <div class="decoration">✨ 🏠 ✨</div>
+        </div>
+
+        <!-- Image Revelation Section -->
+        <div id="image-revelation" class="image-revelation">
+            <div class="reveal-item couple-box couple-left">
+                <img src="family.jpeg" alt="Couple Left" class="couple-img">
+            </div>
+            <div class="reveal-item family-box">
+                <img src="family.jpeg" alt="Family Welcome" class="family-img">
+            </div>
+            <div class="reveal-item couple-box couple-right">
+                <img src="family.jpeg" alt="Couple Right" class="couple-img">
+            </div>
+        </div>
+
+        <!-- Meet the Family Button -->
+        <div class="reveal-item action-box">
+            <button id="meet-family-btn">Click to Meet our Family ✨</button>
+        </div>
+    </div>
+
+    <!-- Family Introduction Section (Sequential Slideshow) -->
+    <div id="family-section" class="family-section">
+        <h2 class="section-title">Meet our Family</h2>
+
+        <div id="family-slideshow" class="family-slideshow">
+            <!-- Family member data will be managed in JS for easier cycling, 
+                 but we'll keep the structure consistent -->
+            <div id="active-member-card" class="family-card full-page-card">
+                <div class="member-photo-large">
+                    <img id="member-img" src="family.jpeg" alt="Family Member">
+                </div>
+                <div class="member-detail-box">
+                    <h3 id="member-name">Mr. Sharma</h3>
+                    <p id="member-relation" class="relation">Groom's Father</p>
+                    <div class="fun-fact-box">
+                        <p id="member-fun-fact"><strong>Fun Fact:</strong> He makes the best morning tea! ☕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-controls">
+            <button id="back-to-welcome" class="back-btn">← Exit</button>
+            <button id="next-member-btn" class="next-btn">Next Member →</button>
+        </div>
+    </div>
+
+    <!-- Final Sweet Message Section -->
+    <div id="final-section" class="final-section">
+        <div class="final-card">
+            <div class="heart-icon">❤️</div>
+            <h2 class="final-title">A New Beginning</h2>
+            <div class="message-body">
+                <p>Welcome to our family!</p>
+                <p>May your home be a place where love grows,
+                    friendships are deepened, and laughter never ends.</p>
+                <p class="signature">With lots of love,<br>The Whole Family</p>
+            </div>
+            <div class="final-decoration">✨ 🏠 ✨</div>
+            <button id="restart-journey" class="restart-btn">Start Over ↺</button>
+        </div>
+    </div>
+
+    <!-- Welcome Music -->
+    <audio id="welcome-music">
+        <!-- Indian Instrumental Placeholder (Swaagat/Festive Theme) -->
+        <source src="welcomesong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
